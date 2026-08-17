@@ -42,10 +42,10 @@ from devices.device_common import DeviceCommon
 #/mnt/vendor/ctrl/dmenu_ln
 class AnbernicXXCommon(DeviceCommon):
     def __init__(self, main_ui_mode): 
-        self.device_name = "ANBERNIC_RG34XXSP"
+        self.device_name = "ANBERNIC_RGXX720480"
         script_dir = Path(__file__).resolve().parent
-        default_cfg_path = script_dir / 'anbernic-rg34xxsp-system.json'
-        system_cfg_path = "/mnt/SDCARD/Saves/anbernic-rg34xxsp-system.json"
+        default_cfg_path = script_dir / 'anbernic-rg-xx-system.json'
+        system_cfg_path = "/mnt/SDCARD/Saves/anbernic-rg-xx-system.json"
         self._load_system_config(system_cfg_path, default_cfg_path)
         self.miyoo_games_file_parser = MiyooGamesFileParser()        
         self.game_utils = MiyooTrimGameSystemUtils()
